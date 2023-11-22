@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        img{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        input.search{
+            width: 250px;
+            border: 3px solid white;
+            display: block;
+            padding: 9px 4px 9px 40px;
+            background: transparent url("/assets/search.svg") no-repeat 13px;
+            float: right;
+            transform: translate(70%,-30%);
+        }
+        .animate{
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%,#ff1361 67%,#fff800 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 130px;
+            transform: translate(20%,-5%);
+            
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+        .v1 {
+            border-left: 6px solid purple;
+            height: 300px;
+            transform: translate(2%,-5%);
+            
+            top: 0;
+        }
+        .decore{
+            font-size: 20pt;
+            font-family:Cambria;
+            color: #ff1361;
+        }
+        .b1{
+            transform: translate(-500%,300%);
+            top:50%;
+            background-color:orange;
+            color: #fff;
+            border:none;
+            border-radius:10px;
+            font-size: 20px;
+        }
+        .b1:hover {
+            background-color:#002ead;
+            transition: 0.7s;
+        }
+        
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1544716278-e513176f20b5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+            background-color: pink;
+        }
+
+        .content-box {
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .b2{
+            top:50%;
+            background-color:orange;
+            color: #fff;
+            border:none;
+            border-radius:10px;
+            font-size: 15px;
+
+        }
+        .b2:hover {
+            background-color:#002ead;
+            transition: 0.7s;
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.dribbble.com/userupload/2549137/file/original-0bd095659cd75c6f306981b8bfb754fa.png?resize=400x300&vertical=center">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">Genre</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Help</a></li>
+                <input class="search" type="search" placeholder="search.....">
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="animate">BOOK STORE</h1><br>
+        <div class="v1"></div>
+        <p class="decore">There is more treasure in books than in all the pirate's loot on Treasure Island</p>
+        <button class="b1" type="button">Explore more</button>
+    
+      
+        
+    </section>
+
+    <section class="content">
+        <div class="content-box">
+            <h2>About Us</h2>
+            <p>Its been successful 10 years of journey with still thriving to reach many more
+                heights.It's a great platform for all the readers to explore their reading skills.
+            </p>
+            <button type="button" class="b2">Read more</button>
+        </div>
+        <div class="content-box">
+            <h2>Our Services</h2>
+            <p>Offers to read all genre and almost all writer's books and documents.Provides 
+                services for all age groups.
+            </p>
+            <button type="button" class="b2">Read more</button>
+        </div>
+        <div class="content-box">
+            <h2>Contact Us</h2>
+            <p>Email: bookstore2@gmail.com</p>
+            <p>Customer care: 0012-3456-2839</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Our Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
